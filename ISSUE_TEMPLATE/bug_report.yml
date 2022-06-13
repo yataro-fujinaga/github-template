@@ -1,0 +1,58 @@
+name: エラー報告（Error Report）
+description: エラー報告のテンプレート
+title: '[Error]: '
+labels: [Error]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [CHECKPOINT]  
+        [MUST]IssueにユーザーをAssignしたか
+  - type: textarea
+    id: about
+    attributes:
+      label: 概要
+      description: エラーを3行で説明してください
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 詳細
+      description: エラーをできるだけ詳しく説明してください
+      placeholder: 伝わるかどうかは気にせずにとりあえず書いてみてください
+    validations:
+      required: true
+  - type: textarea
+    id: try_and_error
+    attributes:
+      label: やってみたこと
+      description: エラーに対してどのようなことを試しましたか？
+      placeholder: どんな小さなことでも良いので書いてみてください
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 仮説
+      description: エラーに対する分析、推測
+      placeholder: 「やってみたこと」を通して、なぜエラーが起こっているのかを推測してみてください
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: 再現手段
+      description: エラーの再現方法
+      placeholder: エラーがどのような時に起こるかを教えてください
+    validations:
+      required: true
+
+  - type: textarea
+    id: os
+    attributes:
+      label: 実行OS
+      description: プログラムを実行しているOS
+      placeholder: macOS Monterey, Window 11, Linux
+    validations:
+      required: true

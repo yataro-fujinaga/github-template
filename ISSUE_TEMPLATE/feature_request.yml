@@ -1,0 +1,58 @@
+name: 機能検討（Feature Request）
+description: 機能検討のテンプレート
+title: '[Feature Request]: '
+labels: [enhancement]
+body:
+  - type: markdown
+  attributes:
+    value: |
+      [CHECKPOINT]  
+      [MUST]IssueにユーザーをAssignしたか
+  - type: textarea
+    id: about
+    attributes:
+      label: 概要
+      description: 機能の説明を3行で説明してください
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 詳細
+      description: 機能の説明をできるだけ詳しく説明してください
+      placeholder: 伝わるかどうかは気にせずにとりあえず書いてみてください
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題
+      description: 解決したい問題
+      placeholder: 何のための機能ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 仮説
+      description: 機能に対する分析、推測
+      placeholder: どのような仮説、動機で機能を提案しましたか？
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 解決策
+      description: 問題の解決策
+      placeholder: 問題をどのように解決しますか？（技術的な要素はできるだけ除いてください）
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 実装
+      description: 解決策の実装方法
+      placeholder: 解決策をどのように実装しますか？（技術的な要素で説明してください）
+    validations:
+      required: true
+  
